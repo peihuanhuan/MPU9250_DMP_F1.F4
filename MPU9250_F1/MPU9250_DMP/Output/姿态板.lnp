@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"..\output\core_cm3.o"
+"..\output\system_stm32f10x.o"
+"..\output\startup_stm32f10x_md.o"
+"..\output\misc.o"
+"..\output\stm32f10x_exti.o"
+"..\output\stm32f10x_flash.o"
+"..\output\stm32f10x_gpio.o"
+"..\output\stm32f10x_rcc.o"
+"..\output\stm32f10x_tim.o"
+"..\output\stm32f10x_usart.o"
+"..\output\main.o"
+"..\output\delay.o"
+"..\output\stm32f10x_it.o"
+"..\output\usart.o"
+"..\output\time.o"
+"..\output\stm32_iic.o"
+"..\output\inv_mpu.o"
+"..\output\inv_mpu_dmp_motion_driver.o"
+--library_type=microlib --strict --scatter "..\Output\вкл╛╟Е.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\Listing\вкл╛╟Е.map" -o ..\Output\вкл╛╟Е.axf
