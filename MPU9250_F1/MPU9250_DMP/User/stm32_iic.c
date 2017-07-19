@@ -13,7 +13,7 @@ void i2cInit(void)
     GPIO_InitStructure.GPIO_Pin = I2C_SCL | I2C_SDA;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
-    GPIO_Init(GPIOB, &GPIO_InitStructure);
+    GPIO_Init(I2C_PORT, &GPIO_InitStructure);
 }
 
 
